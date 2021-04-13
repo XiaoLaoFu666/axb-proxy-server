@@ -1,0 +1,25 @@
+server:
+  port: 8081
+  undertow:
+    accesslog:
+      dir: ./logs
+      enabled: true
+      prefix: ${spring.application.name}
+  servlet:
+    session:
+      timeout: 30m
+    context-path: /abx-proxy
+
+axb:
+  url: https://121.31.255.20:13000
+  appKey: XZKD
+  secretKey: 1g$kyn&YW@NDTyaa
+  requestId: 20210413
+  expiration: 3000
+  anuCode: 1,2,3
+
+sms:
+  url:
+  spid:
+  password:
+  ac:
